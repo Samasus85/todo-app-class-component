@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import List from './List'
 class App extends Component {
-  state = {
-    items: [],
-    text: ""
+  constructor(props) {
+    super()
+    this.state = {
+      items: [],
+      text: ""
+    }
   }
   changeHandler = (e) => {
     this.setState({ text: e.target.value })
